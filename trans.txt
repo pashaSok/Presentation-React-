@@ -1,0 +1,79 @@
+Slide 1 Hi, presenter, theme
+Hello my name is//
+Today i would like to talking about React.js
+
+Slide 2 What is React img
+so What is React? 
+React is a JavaScript library for building user interfaces.
+It is maintained by Facebook and a community of individual developers and companies.
+
+React can be used as a base in the development of single-page or mobile applications. However, React is only concerned with rendering data to the DOM, and so creating React applications usually requires the use of additional libraries for state management and routing.
+Redux and React Router are respective examples of such libraries.
+
+Slide 3 History img
+React's history began a long time ago. In 2010, almost all projects had a programming language like PHP on their stack, and at the same time the first beginnings of the most popular frontend library appeared: in a post on February 10, 2010, facebook presented XHP–a kind of syntactic sugar for PHP, which allowed it to understand HTML markup. In addition to increasing application security, this made it possible to create complex, composite components that were easy to work with, since they required less code to write, could be inherited from each other, and were easier to read
+Later in 2011, Jordan Walk, inspired by the results of XHP, creates the React — FaxJs prootsa.
+However, FaxJs remained just an experimental project and in 2012 Jordan was already working on a prototype of React. It is worth noting that the idea of creating what will later be called React came about when the Facebook Ads team faced serious problems related to both writing and understanding code on projects, and managing the app's state. At that time, it was popular to manage the state of the application due to mutations. as a result, as the project grew, it became more and more difficult to understand what action or event caused certain changes in the application and at what moment. The app's behavior became unpredictable. In the same way, any change on the page, even minor, often provoked re-rendering of the entire application. It was then that the idea came up to create a tool that would take advantage of a cost-effective approach to data management and allow you to write code in a declarative style.
+Slide 4 what is react native
+React Native is an open-source mobile application framework created by Facebook.] It is used to develop applications for Android, iOS, Web and UWP by enabling developers to use React along with native platform capabilities.
+Slide 4.1
+Inside Facebook, Jordan Walke found a way to generate UI elements for iOS from a background JavaScript thread.[9] They decided to organise an internal Hackathon to perfect this prototype in order to be able to build native apps with this technology.[10]
+After months of development, Facebook released the first version for the React JavaScript Configuration in 2015.
+Slide 4.2 Hello world on React Native
+Slide 5. companies using react
+now many large companies use react
+facebook,bbc,Netflix,ebay,paypal,codeacademy,Airbnb,reddit,whatsupp,the new York times,dropbox,yahoo,Instagram,and other
+Slide 6.Get started
+ so, let's go directly to the review of react, and first of all we will see how to connect react
+
+Slide 6.1 reactjs.org
+detailed documentation for react is described on the website reactjs.org
+Slide 6.2 img(like-button)
+First, open the HTML page you want to edit. Add an empty <div> tag to mark the spot where you want to display something with React.
+We gave this <div> a unique id HTML attribute. This will allow us to find it from the JavaScript code later and display a React component inside of it.
+You can place a “container” <div> like this anywhere inside the <body> tag. You may have as many independent DOM containers on one page as you need. They are usually empty — React will replace any existing content inside DOM containers.
+Slide 6.3 img src
+Next, add three <script> tags to the HTML page right before the closing </body> tag
+The first two tags load React. The third one will load your component code.
+Slide 6.4 img react component ,started code
+Create a file called like_button.js next to your HTML page.
+Open starter code and paste it into the file you created.
+This code defines a React component called LikeButton.
+These two lines of code find the <div> we added to our HTML in the first step, and then display our “Like” button React component inside of it.
+That’s It!
+Slide 7. Img helloworld react
+on this slide you can see The smallest React example
+Slide 8 Virtual DOM and details of its implementation in React
+What is a virtual DOM?
+Virtual DOM (VDOM) is a programming concept in which an ideal or "virtual" representation of the user interface is stored in memory and synchronized with the "real" DOM using a library such as ReactDOM. This process is called approval.
+This approach makes the React API declarative: you specify what state the user interface should be in, and React makes sure that the DOM matches this state. This abstracts attribute manipulation, event handling, and manual DOM updates that would otherwise have to be used when developing the application. Since "virtual DOM" is more of a pattern than a specific technology, this term is sometimes used to refer to different concepts. In the React world, "virtual DOM" is usually associated with React elements , since They are objects that represent the user interface. However, React also uses internal objects called "fibers" to store additional information about the component tree. They can also be considered part of the "virtual DOM" implementation in React.
+Does the shadow DOM look like a virtual DOM? 
+No, they are completely different. Shadow DOM is a browser technology designed primarily for defining the scope of variables and CSS in web components. Virtual DOM is a concept implemented by libraries in JavaScript on top of the browser API.
+What is "React Fiber"? 
+Fiber is a new negotiation mechanism in React 16, the main purpose of which is to make rendering of the virtual DOM incremental.
+Slide 9. React.Component
+Components allow you to divide the user interface into independent, reusable parts and work with each part separately.
+Components are similar to JavaScript functions. They accept arbitrary input data (called "props" or properties) and return React elements describing what should appear on the screen.
+The only method you should define in the React.Component subclass is render().
+React does not force you to use the syntax of the ES6 class. If you prefer to avoid using it, you can install the create-react-class package or a similar custom abstraction.
+Slide 9.1 lifecycle
+Each component has several "lifecycle methods" that you can override to execute code at a specific time in the process.
+Mount 
+Mount methods are called in the following order when a component instance is created and added to the DOM:
+
+Update 
+The update can be caused by changes in properties or state. These methods are called in the following order when the component is redrawn:
+
+Unmount 
+This method is called when a component is removed from the DOM:
+Error handling 
+This method is called when an error occurs during rendering, in the lifecycle method, or in the constructor of any child component.
+Slide 9.2 Commonly used lifecycle methods
+on this slide you can see commonly used lifecycle methods
+The render () method is the only required method in the class component.
+Slide 10. What is JSX? Img
+JSX, or JavaScript XML , is an extension to the JavaScript language syntax. Similar in appearance to HTML, JSX provides a way to structure component rendering using syntax familiar to many developers. React components are typically written using JSX, although they do not have to be (components may also be written in pure JavaScript). JSX is similar to another extension syntax created by Facebook for PHP called XHP.
+React is based on the principle that rendering logic is inextricably linked to other UI logic: how events are processed, how the state changes over time, and how data is prepared for display. Instead of artificially separating technologies by putting markup and logic in different files, React shares responsibility with loosely connected units called "components" that contain both markup and logic.
+React can be used without JSX, but most people appreciate it for its visual clarity when working with a UI that lives in JavaScript code. In addition, JSX helps React make error and warning messages clearer.
+Slide 11. Mern img mern
+MongoDB database, Express frameworks.js and ReactJS and Node technology.js together form the MERN stack — a powerful platform that uses only one language at all levels: JavaScript.
